@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Funny</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='yes.css'>
+         
+        
+    </head>
+      
+    <body>
+        
+        <section>
+        <div class="box">
+        <p class="quiz"> Do You Love Me ?</p>
+        <button id="changeText1" onmouseover="mouseover()" onclick="change()">
+            Yes
+        </button>
+
+        <button id="changeText2" onmouseover="mouseover2()" onclick="change()">
+            No
+        </button>
+             
+        <div class="imgbox">
+            <img src="jk.webp">
+            </div>
+      </div>
+    
+      </section>
+    </body>
+    <script>
+         
+       function change(){
+           document.querySelector('.imgbox img').style.visibility='inherit';
+       }
+       
+
+        function mouseover(){
+            document.getElementById("changeText1").innerHTML = "Yes";
+            document.getElementById("changeText2").innerHTML = "No";
+        }
+        
+      function mouseover2(){
+           document.getElementById("changeText2").innerHTML = "Yes";
+          document.getElementById("changeText1").innerHTML = "No";
+      }
+    </script>
+</html>
